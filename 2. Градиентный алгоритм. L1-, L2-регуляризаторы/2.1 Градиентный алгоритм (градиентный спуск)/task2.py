@@ -33,7 +33,7 @@ for n in range(N):
     approx.set_ydata(X @ w.T)
     fig.canvas.draw()
     fig.canvas.flush_events()
-    time.sleep(0.01)
+    time.sleep(0.02)
 
 Q = 1/sz * sum(((X @ w.T) - coord_y)**2)
 print(w)
